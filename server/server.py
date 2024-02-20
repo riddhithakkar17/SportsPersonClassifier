@@ -28,7 +28,6 @@ def classify_image():
 
 @app.route('/<path:filename>')
 def custom_static(filename):
-    print("dssfddfs")
     return send_from_directory(template_dir, filename, as_attachment=True)
 
 if __name__ == "__main__":
